@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>YNS test Daniel Canalda
+    </title>
+  </head>
+  <body>
+  
+ <section id="file-section">
+    <div class="container">
+     <div class="container-width"> 
+        <div class="grid-container">
+            <div class="grid-col">
+              <div class="grid-content">
+                <div class="user-profile">
+                  <div class="photo">
+                    <img alt="" title="" width="37" height="37" src="assets/images/avatar4.png">
+                  </div>
+                  <div class="info-content">
+                      <span class="name">vebris</span>
+                      <span class="info">Barcelona (Ciudad) · 8 sep 2019</span>
+                  </div>
+                </div>
+                <div class="user-comment">
+                    <h3>Estoy muy orgullosa de mi abdomen</h3>
+                    <div class="spect">
+                      <span class="recom">
+                        Vale la pena
+                      </span>
+                      <span class="cost">
+                          Precio aproximado: 8500€
+                      </span>
+                    </div>
+                </div>
+                <div class="user-photos">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery2.png">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery1.png">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery2.png">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery1.png">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery2.png">
+                  <img alt="" title="" width="153" height="153" src="assets/images/gallery1.png">
+                </div>
+                <h4>Sobre el doctor</h4>
+                <div class="about">
+                  <img class="doc-picture" alt="" title="" width="63" height="48" src="assets/images/doctor.png">
+                  <div class="doc-info info-content">
+                      <span class="name">Dorsia Clínica Estética</span>
+                      <span class="info">81 sedes en Madrid, Lleida, Tarragona…</span>
+                  </div>
+                </div>
+                <button class="btn">Contactar al doctor</button>
+                <div class="valoracion">
+                  <div class="rating">
+                      <span>Valoración:</span>
+                      <img alt="" title="" src="assets/icons/star-filled.svg">
+                      <img alt="" title="" src="assets/icons/star-filled.svg">
+                      <img alt="" title="" src="assets/icons/star-filled.svg">
+                      <img alt="" title="" src="assets/icons/star-filled.svg">
+                      <img alt="" title="" src="assets/icons/star.svg">
+                  </div>
+                  <div class="comment">
+                      Es un excelente cirujano que se merece con creces la buena fama tiene, pero para estas cosas no hay que escatimar! El post operatorio ha sido un poco difícil. Aún no me adapto a caminar sin sentir molestia y opresión, pero supongo que es cuestión de tiempo.
+                  </div>
+                </div>
+                <div class="separator"></div>
+              </div> 
+              <div id="form-section">
+                <div class="grid-content">
+                    <form name="myform">
+                    <div class="form-container">
+                      <div class="form-block">
+                        <h4 class="experiencia-title">Cuéntanos tu experiencia</h4>
+                        <div class="field-wrapper selector">
+                          <label for="tratamiento">¿Qué tratamiento te has realizado?</label>
+                          <select required> 
+                              <option disabled selected value="">Selecciona el tratamiento</option>
+                              <option value="sen">Aumento de senos</option> 
+                              <option value="lipo">Liposucción</option> 
+                              <option value="botox">Botox</option> 
+                              <option value="varices">Varices</option> 
+                              <option value="dep">Depilación láser</option> 
+                          </select> 
+                        </div>
+                        <div class="empty-space"></div>
+                        <div class="field-wrapper radios">
+                          <label for="recom">¿Recomendarías el tratamiento?</label>
+                          <div class="checkmark-container">
+                            <input type="radio" name="recom" value="Si" required id="yep"><span class="checkmark">Si</span>
+                          </div>
+                          <div class="checkmark-container">
+                            <input type="radio" name="recom" value="No" id="nope"><span class="checkmark">No</span>
+                          </div>
+                        </div>
+                      </div><!-- //form block -->
+                      <div class="form-block field-wrapper valoracion desplegable">
+                        <div class="field-wrapper experience-subject">
+                          <label for="experiencie-subject">Título de tu experiencia</label>
+                          <input onkeyup="charcountupdate2(this.value)" pattern=".{20,90}" required id="experience-subject" placeholder="Título resumen de tu experiencia" type="text">
+                          <span class="caracter-count"><span id=charcount2>0</span> / 90 (mín. 20)</span>
+                        </div>
+                        <div class="empty-space"></div>
+                        <div class="field-wrapper experience-text">
+                          <label for="msg-experience">¿Qué tratamiento te has realizado?</label>
+                          <textarea onkeyup="charcountupdate3(this.value)" maxlength="18000" minlength="300" id="msg-experience" required placeholder="Cuéntanos todos los detalles, porqué decidiste hacerlo, cómo te sentiste antes y después del tratamiento, qué consejos darías a los que lo quieren realizar..."></textarea>
+                          <span class="caracter-count"><span id=charcount3>0</span> / 18000 (mín. 300)</span>
+                        </div>
+                      </div><!-- //form block -->
+                      <div class="form-block">
+                        <div class="field-wrapper submitbtn">
+                          <input type="submit" value="¡Compartir experiencia!">
+                          <div class="empty-space"></div>
+                        </div>
+                      </div><!-- //form block -->    
+                    </div><!-- //form container -->
+                    </form>
+                </div>
+              </div>
+            </div>
+            <div class="grid-col sidebar">
+              <div class="grid-content">
+                <h4>Más experiencias <span>Ver todas ></span></h4>
+                <div id="plus-exp" class="banner">
+                </div>
+              </div>
+            </div>
+        </div>
+     </div>
+    </div>
+ </section>
+
+ <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
